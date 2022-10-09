@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikaro-silva</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="containerHeard">
+            <h2>Ikaro Silva </h2>
+            <nav id="nav" class="hide">
+                <a href="#sobre">Sobre</a> <!--vai se referir a uma section da pagina -->
+                <a href="#Tecnologias">Habilidades</a> <!--vai se referir a uma section da pagina -->
+                <a href="#projeto">Projetos</a> <!--vai se referir a uma section da pagina -->
+            </nav>
+            <picture><!--imagem do menu  -->
+                <source media="(max-width:432px)" srcset="./img/cardapio.png" id="imgPequena">
+                <img src="./img/cardapio.png" alt="menu" id="menu" class="menu" onclick="mostrar('nav')"><!--menu--->
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div id="sobre"><!--Sobre min-->
+            <h2>Sobre Mim</h2>
+            <div class="sobre-banner">
+                <p>
+                    Olá, sou o Ikaro ,estudante de  ADS(Analise de Desenvolvimento de sistemas)e o meu foco de
+                    estudo é <Strong>front end </Strong>. Estou a procura da minha primeira oportunidade em um estagio
+                    .Sou uma pessoa que gosta de resolver problemas do melhor jeito e isso está
+                    na fundamentação dos meus projetos de  programação.
+                </p>
+            
+                <img src="./img/perfil.jpg" alt="">
+            </div>
+        </div>
+        <section id='perfil'><!--Geral perfil -->
+            <h1 id="perfilTAG">Perfil</h1>
+            <div class="perfilContainer">
+
+                <div class="perfilCurriculo"><!--Curriculo perfil -->
+                        <h2>Um pocuo mais..</h2>
+                        <h3>Redes</h3>
+                        <nav>
+                            <a href="https://github.com/Ikaro-silva">GitHub</a><!--vai para o pefil do github -->
+                            <a href="https://www.linkedin.com/in/ikaro-silva-71071b221">Linkedin</a><!--vai para o pefil do linkedin-->
+                       
+                        </nav>
+                
+                        
+                        <div class='fomAcademica'><!--formação academica-->
+                            <h3>Formação acadêmica</h3>
+                            <h4>Senai Dendezeiros - Ténico Eletrotécnica</h4>
+                            <p>Curso com foco em automação, comandos elétricos, CLP e instalações industriais. </p>
+                            <br>
+                            <h4>Estácio- Análise e desenvolvimento de sistemas</h4>
+                            <p> Cursando primeiro semestre.</p>
+                            <br>
+                            <h4>Google - Curso análise de dados</h4>
+                            <p>Proporcionado pela Coursera com o intuito de profissionalizar pessoas na área tech.</p>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="containerTecnologias"><!--container tecnologias-->
+            <h2 id="Tecnologias">Tecnologias</h2>
+            <div class="tecnologias "><!--tecnologias  perfil -->
+                <div>
+                    <h3>HTML</h3>
+                    <img src="img/html.png" alt="tecnologia HTML"><!--img html -->
+                    <hr>
+                    <p>Estudo <b>HTML</b> tanto  teoria quanto nos meus projetos , páginas Webs e formulários bem estruturados .
+                        A estrutura do HTML é muito impotante para  mim pois é dela que sai toda a criação de páginas web .Visando acessiblidade 
+                        e alto desempenho
+                    </p>
+                </div>
+
+                <div>
+                    <h3>CSS</h3>
+                    <img src="img/css.png" alt="tecnologia CSS"><!--img CSS -->
+                    <hr>
+                    <p>
+                        O <b>CSS</b> é a principal ferramenta de estilização.É muito versatio, por isso 
+                        estudo <b>psicologia das cores</b> ,animações  e a manipulção de textos ,imagens.
+                        Sendo assim, responsável por deixar os contêineres do html organizados.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Java Script</h3>
+                    <img src="img/js.png" alt="tecnologia Java script"><!--img java script -->
+                    <hr>
+                    <p>
+                        No <b>Java Script</b>,  meus estudos estão baseados em 
+                        <b>Java script funcional</b> e<b> orientado a objetos </b>.Com funções e manipulação 
+                        de objetos e arrays e o DOM.Sempre priorisando códigos limpos e que permitam reutilização .
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Node.js</h3>
+                    <img src="img/node.js.png" alt="tecnologia node.js"><!--img node.js -->
+                    <hr>
+                    <p>Sendo o <b>Node.js</b> uma tecnologia que permite o java script trabalhar com servidor na
+                    aplicação web eu estudo tambem <b>Express</b> tambem  para manipulação de portas e servidor,
+                    Ja no banco de dados a tecnologia em foco é a <b>Mongo</b>
+                </p>
+                </div>    
+            </div>
+        </section>
+        <section id="containerProjetos">
+            <h2 id="projeto">Projetos</h2>
+            <h4>Projetos ordenados por cronologia de conhecimento</h4>
+            <div id="projetos">
+                <div>
+                    <h3>Signos</h3>
+                    <img src="./img/signos1.jpg" alt="Projeto Signos">
+                    <p>Projetos feitos para apresentações simples de informações 
+                        sobre os signos 
+                    </p>
+                    <a href="https://ikaro-silva.github.io/Signos/" target="_blank">Click para melhor experiências</a>
+                </div>
+
+                <div>
+                    <h3>Reprodutor de vídeos</h3>
+                    <img src="img/vid2.jpg" alt="Projeto vid-rural">
+                    <p>  Plataforma que cria uma sala e exibe vídeos do Youtube  </p>
+                    <a href="https://ikaro-silva.github.io/E-rural--desafio/" target="_blank">Click para melhor experiências</a>
+                </div>
+
+                <div>
+                    <h3>Formulário</h3>
+                    <img src="./img/portifolio1.jpg" alt="Projeto formulario">
+                    <p>formulario integrado com PHP em um banco mysql  </p>
+                    <a href="https://ikaro-silva.github.io/Formulario/" target="_blank">Click para melhor experiências</a>
+                </div>
+
+
+                <div>
+                    <h3>Lista de produtos</h3>
+                    <img src="./img/listaDeProdutos2.jpg" alt="Projeto Lista de Produtos">
+                    <p>Ferramenta criada para listagem de produtos e controle de
+                        estoque
+                    </p>
+                    <a href="https://ikaro-silva.github.io/Lista-de-produtos/" target="_blank">Click para melhor experiências</a>
+                </div>
+
+                <div>
+                    <h3>Contador</h3>
+                    <img src="./img/contador2.jpg" alt="">
+                    <p>Um contador para auxilar Crianças com dificuldade academica</p>
+                    <a href="https://ikaro-silva.github.io/contador/" target="_blank">Click para melhor experiências</a>
+                </div>
+            </div>
+            <div id="seta">
+                <a href="#sobre"><img src="img/seta.png" alt="" id="imgSeta"></a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <P>Email: sikaro609@gmail.com</P>
+        <a href="tel:(75)91963484">Telefone</a><!--vai para o numero  -->
+        <a href="https://wa.me/5575991963484?text=whatsApp" target="_blank" >WhatsApp</a>
+    </footer>
+</body>
+</html>
