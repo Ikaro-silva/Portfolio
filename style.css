@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0a0d2c;
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+/*CONFG CONTAINER GERAL*/
+header .containerHeard{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color:#0F1340;
+}
+/*CONFG H2*/
+header h2{
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 3px;
+}
+@media only screen and (max-width:430px){
+    header h2{
+        
+        padding: 2px;
+        margin-left:5px;
+        text-align: center;
+        
+    }
+}
+    
+/*CONFG MENU*/
+header .menu{
+    width: 25px;
+    color: white;
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 3px;
+}   
+header .menu:hover{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
+    background-color: rgba(240, 248, 255, 0.788);
+    transition: 0.3s;
+    cursor:pointer;   
+}
+@media only screen and (max-width:430px){
+    header .menu{
+        width:18px;
+        background-color:rgb(253, 253, 253) ;
+        margin-top:2px;
+    }
+}
+/*CONFG ANIMAÇÃO*/
+.hide{
+  opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+/*CONFG NAV */
+header nav {
+    margin: auto;
+    transition: 0.3s;  
+}
+
+header nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color:#222b8cc4;
+    padding: 5px;
+    border-radius: 3px;
+}
+header nav a:hover{
+    background-color:#222b8c8c;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+}
+@media only screen and (max-width: 430px) {
+    header nav a{
+        margin: 0 5px;
+        font-size: 0.8em;
+        padding: 3px;
+    }
+}
+
+/*CONFG MAIN*/
+/*SOBRE MIM*/
+main #sobre{
+  padding:55px 0;
+  color: white;
+  align-items: center;
+
+}
+main .sobre-banner{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width:550px) {
+   main .sobre-banner{
+            display:inline-block;
+    }
+}
+
+main #sobre h2{
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+main #sobre p{
+    max-width:400px;
+    background-color: #00306696;
+    padding:5px 5px 5px 30px;
+    border-radius: 3px;
+}
+main #sobre img{
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-right: 20px;
+    border:2px groove  white
+}
+@media only screen and (max-width: 550px) {
+   main #sobre img{
+    padding-top:20px;
+    margin:auto;
+    width:200px ;
+    border: none;
+   }
+}
+
+/*SECTION PERFIL*/
+main  #perfil{
+    background-image: url(./img/backgroud-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main .perfilContainer{
+    padding: 10px;
+    margin:20px ;
+    background-color:rgba(255, 255, 255, 0.664);
+}
+/*CONFG PRFIL H*/
+main h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+main h2{
+    padding: 10px 0 15px 0;  
+    text-align: center;
+    color: #0C0F33;
+}
+main .perfilCurriculo h3{
+    background-image:linear-gradient(to right ,#20298cc0,transparent);
+    margin: 10px ;
+    padding: 3px; 
+}
+main  .perfilCurriculo h4{
+    padding-left:10px;
+}
+/*CONFG PRFIL NAV*/
+main .perfilCurriculo nav a {
+    display: block;
+    padding-left: 20PX;
+    color: black;
+    text-decoration:none;
+}
+main .perfilCurriculo nav a:hover{
+    margin-top:2px;
+    text-decoration: underline;
+    background-color: #0a0d2c54;
+}
+
+main .perfilCurriculo p{
+    padding:1px 0;
+    padding-left: 20px;
+} 
+
+/*CONFG SECTION TECNOLOGIAS*/
+main #containerTecnologias{
+    text-align: center; 
+    margin-bottom:50px;  
+}
+main .tecnoclogias{
+    display: flex;
+    justify-content:center;
+      
+}
+/*CONFG CADS TECNOLOGIAS*/
+main .tecnologias div{
+    background-color: white;
+    display:inline-block;
+    text-align: center;
+    border: 2px solid #dbdeffb6;
+    padding: 10px;
+    margin: 50px 10px;
+}
+main .tecnologias div:hover{
+    background-color: #e2e4ff7a;
+    transition: 0.5s;
+}
+/*CONFG H2, H3*/
+main #containerTecnologias h2{
+    color:white;
+}
+main .tecnologias div h3{
+    background-color:#9FA2C3;
+    margin:-20px -12px;
+    color: white;
+    border-radius:10px 10px 0 0 ;
+}
+/*CONFG IMG*/
+main #containerTecnologias img{
+    padding:30px 0 15px 0;
+    width: 100px;
+    justify-content: center;
+}
+/*CONFG paragrafos*/
+main #containerTecnologias b{
+    color:#010d1b;
+}
+main #containerTecnologias P{
+    width: 250px;
+    text-align: justify; 
+}
+
+/*PROJETOS*/
+/*CONFG PROJETOS*/
+main #containerProjetos{
+    background-color:rgba(211, 211, 211, 0.493);
+}
+main #projetos{
+    display:inline-block;
+    text-align: center;
+}
+main #projetos div{
+    display: inline-block;
+    margin:50px 10px;  
+}
+
+/*CONFG H2 , H3, H4 , P*/
+main #containerProjetos h2{
+   color:white
+}
+
+main #projetos h3{
+    background-color:#001731;
+    color: white;
+    border-radius:  10px 10px 0 0;
+    padding: 2px;
+}
+
+main #containerProjetos h4{
+    max-width:400px;
+    background-color: #001731;
+    padding:5px 5px 5px 30px;
+    border-radius: 0 3px 3px 0;
+    color: white;
+}
+
+main #projetos p{
+    width:300px;
+    background-color:#001731;
+    color: white;
+    border-radius:0 0 10px 10px;
+    padding: 5px 0 5px 0;
+    margin: -5px 0 8px 0;
+
+}
+
+/*CONFG IMG*/
+main #projetos img{
+   width:300px;
+   height:250px;
+}
+
+/* CONFG LINKS */
+main #projetos a{
+    text-decoration: none;
+    color: white;
+    background-color:#222b8cc4;
+    padding: 5px;
+    border-radius: 3px;
+}
+main #projetos a:hover{
+    background-color:#222b8c8c;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+    font-size: 1.1em;
+   
+}
+/* IMG SETA */
+main #seta{
+    margin-left:92%;
+    position: absolute;
+    margin-bottom: 10px;
+  
+}
+
+main #seta img{
+    width: 25px;
+    color: white;
+    border-radius: 3px;
+    margin-top: -5px;       
+}
+
+main #seta img:hover{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527); 
+    margin-top: -20px;   
+    transition: 0.7s;
+    cursor:pointer;   
+     
+}
+/*FOOTER*/
+footer{
+    height:60px;
+    color:white;
+    margin:10px 0  0 60px;
+    padding: 5px;  
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}   
+footer a:hover{
+    text-decoration: underline;
+}
